@@ -1,0 +1,209 @@
+
+ .about-hero-top-content{
+	 position: absolute;
+	 margin-left: 40px;
+ } 
+ .about-hero-top-content h2{
+	  font-weight: 900;
+	  color: whitesmoke;
+	  text-align: start;
+	  margin-left: 16px;
+ } 
+ .about-hero-top-content p{
+	  font-weight: 4400;
+	  color: whitesmoke;
+	  text-align: start;
+ } 
+
+.ethos-main-div{
+display: flex;
+justify-content: center;
+}
+  
+
+.btn:focus {
+	outline: none;
+	box-shadow: none;
+  }
+.main-container{
+    margin: 30px 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white!important;    
+    border-radius: 5px;   
+     
+}
+
+.right-main-container{
+    flex: .7 !important;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.left-main-container{
+    flex: .3 !important;
+}
+
+.un-oderlist {
+    list-style: none;
+    margin-left: -40px
+  }
+
+  .list-icon{
+	padding-bottom: 10px;
+    margin-left: 42px;
+  }
+  .list-icon span {
+    font-size: 16px;
+   
+  }
+  
+  .un-oderlist .list-icon::before {
+    content: "•";
+    color: red;
+    font-weight: bold;
+    display: inline-block;   
+    width: 1em;
+    margin-right: 20px;
+     
+    line-height: 120%;
+  }
+
+.sub-right-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/* starting gallery section css */
+
+
+
+/* All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout. */
+
+*/
+
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:500); */
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ 
+
+ 
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+/* Ending Gallery section here */
+
+.our-ethos-container{
+	display: flex;
+	margin: 8px;
+	
+}
+.our-ethos-container div{
+ width: 60px !important;
+ height: 70px !important;
+ border-radius:   100% 0% 100% 0% / 26% 100% 0% 74% ;
+ color: whitesmoke;
+ background-color: #fd471e ;
+ align-content: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 23px;
+ font-weight: 500;
+}
+.my-ethos {
+margin: 13px 20px;
+}
+.my-ethos span{
+	margin-bottom: 4px;
+}
+.my-ethos h6{
+	margin-bottom: 4px;
+	font-weight: 800;
+	letter-spacing: .5pxpx;
+}
+
+
+/* form section */
+
+#contact-form label{
+margin-bottom: 8px;
+}
